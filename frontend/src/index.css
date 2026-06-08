@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-navy-955: #f4f5f7;
+  --color-navy-950: #f9fafb;
+  --color-navy-900: #ffffff;
+  --color-navy-800: #f3f4f6;
+  --color-navy-700: #e5e7eb;
+  --color-navy-600: #9ca3af;
+  
+  --color-amber-gold: #000000;
+  
+  /* Override default tailwind slate values to keep them legible on white background */
+  --color-slate-50: #0f172a;
+  --color-slate-100: #0f172a;
+  --color-slate-200: #1e293b;
+  --color-slate-300: #334155;
+  --color-slate-400: #475569;
+  --color-slate-500: #64748b;
+  --color-slate-600: #94a3b8;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-navy-950);
+  color: var(--color-slate-200);
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
